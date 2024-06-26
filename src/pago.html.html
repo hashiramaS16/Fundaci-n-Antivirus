@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Pago</title>
+  <script src="https://checkout.wompi.co/widget.js"></script>
+  <style>
+    /* Estilos básicos para el cuerpo de la página */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Estilo para el contenedor principal */
+    .container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      margin: 40px auto;
+    }
+
+    /* Estilo para los encabezados */
+    h1 {
+      color: #333;
+    }
+
+    /* Estilo para el botón de pago */
+    #wompi-button {
+      background-color: #1c87c9;
+      color: white;
+      border: none;
+      padding: 15px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 10px 0;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    #wompi-button:hover {
+      background-color: #155a8a;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Página de Pago</h1>
+    <button id="wompi-button">Pagar con Wompi</button>
+  </div>
+
+  <script>
+    document.getElementById('wompi-button').addEventListener('click', function() {
+      const checkout = new WidgetCheckout({
+        currency: 'COP', // Moneda en la que se hará el pago
+        amountInCents: 500000, // Monto en centavos (5000.00 COP)
+        reference: 'ORDER12345', // Identificador único de la orden
+        publicKey: 'tu-llave-publica', // Llave pública de tu cuenta Wompi
+        redirectUrl: 'https://tusitio.com/confirmacion.html' // URL a donde redirigir después del pago
+      });
+      checkout.open();
+    });
+  </script>
+</body>
+</html>
