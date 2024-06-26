@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boton wompi</title>
+  <script src="https://checkout.wompi.co/widget.js"></script>
+  <style>
+    
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+
+    .container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      max-width: 300px;
+      margin: 40px auto;
+    }
+
+    
+    h1 {
+      color: #333;
+    }
+
+  
+    .image-button {
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+    }
+
+    .image-button img {
+      display: block;
+      max-width: 100%;
+      border-radius: 4px;
+      transition: filter 0.3s ease;
+    }
+
+    .image-button img:hover {
+      filter: hue-rotate(0deg) brightness(0) saturate(100%) invert(20%) sepia(100%) saturate(10000%) hue-rotate(340deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Donar</h1>
+    <button id="wompi-button" class="image-button">
+      <img src="c:\Users\ASUS\Pictures\Camera Roll\8f757d2e-e309-46e9-b9e1-4246c5988e74.png" alt="Pagar con Wompi">
+    </button>
+  </div>
+
+  <script>
+    document.getElementById('wompi-button').addEventListener('click', function() {
+      const checkout = new WidgetCheckout({
+        currency: 'COP', 
+        amountInCents: 500000, 
+        reference: 'ORDER12345', 
+        publicKey: 'tu-llave-publica', 
+        redirectUrl: 'file:///C:/Users/ASUS/Desktop/Fundaci-n-Antivirus/src/confirmacion.html.html' 
+      checkout.open();
+    });
+  </script>
+</body>
+</html>
