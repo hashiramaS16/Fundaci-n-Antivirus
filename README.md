@@ -25,3 +25,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+## create folder scripts
+
+Crear una carpeta llamada scripts (https://github.com/kamilo9809/Scripts-utiles.git) clonar este repositorio extraer todos los archivos y datos de la carpeta scripts3 y agregarlos al capreta scripts del proyecto despues de haber creado la carpeta
