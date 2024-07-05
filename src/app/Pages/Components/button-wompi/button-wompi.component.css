@@ -1,0 +1,20 @@
+.wompi-button {
+  width: 50px; /* Ajusta el tamaño según tus necesidades */
+  height: 50px;
+  border-radius: 50%; /* Esto hace que el botón sea redondo */
+  background-color: #007bff; /* Color de fondo del botón */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  position: absolute; /* Posiciona el botón de manera absoluta */
+  top: 50px; /* Ajusta la distancia desde la parte superior */
+  right: 50px; /* Ajusta la distancia desde la parte derecha */
+}
+
+.wompi-button img {
+  width: 80%; /* Ajusta el tamaño de la imagen dentro del botón */
+  height: auto;
+  border-radius: 50%;
+}
