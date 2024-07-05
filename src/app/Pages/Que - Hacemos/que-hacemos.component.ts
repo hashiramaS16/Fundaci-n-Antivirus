@@ -1,9 +1,13 @@
 import { Component } from '@angular/core';
+import { AnalisisDeDatosComponent } from './Pages/Analisis de Datos/analisis-de-datos.component';
+import { ApoyoEmocionalComponent } from './Pages/Apoyo Emocional/apoyo-emocional.component';
+import { ComunicacionesComponent } from './Pages/Comunicaciones/comunicaciones.component';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-que-hacemos',
   standalone: true,
-  imports: [],
+  imports: [AnalisisDeDatosComponent, ApoyoEmocionalComponent, ComunicacionesComponent, RouterOutlet],
   templateUrl: './que-hacemos.component.html',
   styleUrl: './que-hacemos.component.css'
 })
