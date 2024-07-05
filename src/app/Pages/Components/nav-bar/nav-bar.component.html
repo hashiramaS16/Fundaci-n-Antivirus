@@ -2,23 +2,10 @@
   <nav class="navbar navbar-expand-md">
     <div class="container-fluid">
       <div class="caja">
-        <a class="navbar-brand" href="#"
-          ><img
-            class="img-fluid mx-2 mt-1"
-            src="/assets/Logo.svg"
-            max-width="180px"
-            alt="Logo Fundación"
-            id="logo-navbar"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarTop"
-          aria-controls="navbarTop"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <a class="navbar-brand"><img class="img-fluid mx-2 mt-1" src="/assets/Logo.svg" max-width="180px"
+            alt="Logo Fundación" id="logo-navbar" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTop"
+          aria-controls="navbarTop" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon text-white"></span>
         </button>
       </div>
@@ -27,38 +14,23 @@
           <ul class="navbar-nav d-flex justify-content-end ml-2">
             <li class="nav-item">
               <form action="">
-                <button
-                  [routerLink]="'registrate'"
-                  class="btn btn-md"
-                  type="submit"
-                >
+                <button [routerLink]="'registrate'" class="btn btn-md" type="submit">
                   Registrate
                 </button>
               </form>
             </li>
             <li class="nav-item">
               <form action="">
-                <button
-                  [routerLink]="'iniciar-sesion'"
-                  class="btn btn-md btn-auto-adjust"
-                >
+                <button [routerLink]="'iniciar-sesion'" class="btn btn-md btn-auto-adjust">
                   Iniciar Sesión
                 </button>
               </form>
             </li>
             <li class="nav-item">
               <form class="d-flex" role="search">
-                <input
-                  class="form-control me-2 form-control-lg auto-width"
-                  type="search"
-                  placeholder="¿Cómo puedo ayudarte?"
-                  aria-label="Search"
-                />
-                <button
-                  [routerLink]="'buscar'"
-                  class="btn btn-outline-success btn-md"
-                  type="submit"
-                >
+                <input class="form-control me-2 form-control-lg auto-width" type="search"
+                  placeholder="¿Cómo puedo ayudarte?" aria-label="Search" />
+                <button [routerLink]="'buscar'" class="btn btn-outline-success btn-md" type="submit">
                   <img src="assets/search.png" width="20px" alt="Lupa amarilla para indicar búsqueda">
                 </button>
               </form>
@@ -71,145 +43,74 @@
 
   <nav class="navbar navbar-expand-md main-nav">
     <div class="container">
-      <div
-        class="collapse navbar-collapse justify-content-center align-items-center"
-        id="navbarTop"
-      >
+      <div class="collapse navbar-collapse justify-content-center align-items-center" id="navbarTop">
         <ul class="navbar-nav p-1">
           <li class="nav-item enlaces">
-            <a [routerLink]="'inicio'" class="nav-link d-flex align-items-center justify-content-center" href="#">
-                <img class="img-fluid mx-2" src="assets/home.png" width="20px" id="home-icon" alt="Icono de casa">Inicio</a
-            >
+            <a [routerLink]="'inicio'" class="nav-link d-flex align-items-center justify-content-center">
+              <img class="img-fluid mx-2" src="assets/home.png" width="20px" id="home-icon"
+                alt="Icono de casa">Inicio</a>
+          </li>
+          <li class="nav-item enlaces">
+            <a class="nav-link d-flex align-items-center justify-content-center"
+              [routerLink]="'fundacion'">Fundacion</a>
           </li>
           <li class="nav-item dropdown">
-            <a
-              [routerLink]="'quienes-somos'"
-              class="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-              href="#"
-              role="button"
-              >Quienes Somos</a
-            >
+            <a [routerLink]="'que-hacemos'" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+              href="que-hacemos" role="button">Que-Hacemos</a>
             <ul class="dropdown-menu">
               <li>
-                <a [routerLink]="'conocenos'" class="dropdown-item" href="#"
-                  >Conócenos</a
-                >
+                <a [routerLink]="'Analitica de Datos'" class="dropdown-item">Analitica de Datos</a>
               </li>
               <li>
-                <a [routerLink]="'mision'" class="dropdown-item" href="#"
-                  >Misión</a
-                >
+                <a [routerLink]="'Apoyo Emocional'" class="dropdown-item">Apoyo Emocional</a>
               </li>
               <li>
-                <a [routerLink]="'vision'" class="dropdown-item" href="#"
-                  >Visión</a
-                >
+                <a [routerLink]="'Comunicaciones'" class="dropdown-item">Comunicaciones</a>
               </li>
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a
-              [routerLink]="'nuestros-servicios'"
-              class="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-              href="#"
-              role="button"
-              >Nuestros Servicios</a
-            >
+            <a [routerLink]="'servicios'" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+              role="button">Nuestros Servicios</a>
             <ul class="dropdown-menu">
               <li class="nav-item dropdown">
-                <a
-                  [routerLink]="'apoyo-academico'"
-                  class="nav-link dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                  role="button"
-                  href="#"
-                  >Apoyo Académico</a
-                >
+                <a [routerLink]="'apoyo-academico'" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                  role="button">Estudiantes</a>
                 <ul class="dropdown-menu submenu">
                   <li>
-                    <a [routerLink]="'mentorias'" class="dropdown-item" href="#"
-                      >Tutorías - Mentorías</a
-                    >
+                    <a [routerLink]="'mentorias'" class="dropdown-item">Tutorías - Mentorías</a>
                   </li>
                   <li>
-                    <a [routerLink]="'nivelate'" class="dropdown-item" href="#"
-                      >Nivélate</a
-                    >
+                    <a [routerLink]="'nivelate'" class="dropdown-item">Nivélate</a>
                   </li>
                   <li>
-                    <a
-                      [routerLink]="'grupos de estudio'"
-                      class="dropdown-item"
-                      href="#"
-                      >Grupos de estudio</a
-                    >
+                    <a [routerLink]="'grupos de estudio'" class="dropdown-item">Grupos de estudio</a>
                   </li>
+                  <li>
+                    <a [routerLink]="'acompaniamiento'" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                      role="button">Acompañamiento-Orientación</a>
+                  </li>
+
                 </ul>
               </li>
-              <li class="nav-item dropdown">
-                <a
-                  [routerLink]="'acompaniamiento'"
-                  class="nav-link dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                  role="button"
-                  href="#"
-                  >Acompañamiento-Orientación</a
-                >
-                <ul class="dropdown-menu submenu">
-                  <li>
-                    <a [routerLink]="'asesorias'" class="dropdown-item" href="#"
-                      >Asesorías Socio-Pedagógicas</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      [routerLink]="'acompaniamiento-ocupacional'"
-                      class="dropdown-item"
-                      href="#"
-                      >Acompañamiento Ocupacional</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      [routerLink]="'planpadrino'"
-                      class="dropdown-item"
-                      href="#"
-                      >Plan Padrino</a
-                    >
-                  </li>
-                </ul>
+              <li class="nav-item ">
+                <a [routerLink]="'consultorias'" class="nav-link " role="button">Consultarias</a>
+
               </li>
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a
-              [routerLink]="'oportunidades'"
-              class="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-              href="#"
-              role="button"
-              >Oportunidades para Ti</a
-            >
+            <a [routerLink]="'oportunidades'" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+              role="button">Oportunidades para Ti</a>
             <ul class="dropdown-menu">
               <li>
-                <a [routerLink]="'o-academicas'" class="dropdown-item" href="#"
-                  >Oportunidades Académicas</a
-                >
+                <a [routerLink]="'o-academicas'" class="dropdown-item">Oportunidades Académicas</a>
               </li>
               <li>
-                <a [routerLink]="'o-formativas'" class="dropdown-item" href="#"
-                  >Oportunidades Formativas</a
-                >
+                <a [routerLink]="'o-formativas'" class="dropdown-item">Oportunidades Formativas</a>
               </li>
               <li>
-                <a
-                  [routerLink]="'o-socioeconómicas'"
-                  class="dropdown-item"
-                  href="#"
-                  >Oportunidades Socioeconómicas</a
-                >
+                <a [routerLink]="'o-socioeconómicas'" class="dropdown-item">Oportunidades Socioeconómicas</a>
               </li>
             </ul>
           </li>
