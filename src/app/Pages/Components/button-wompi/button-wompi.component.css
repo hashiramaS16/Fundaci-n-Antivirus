@@ -1,20 +1,30 @@
+/* button-wompi.component.css */
 .wompi-button {
-  width: 50px; /* Ajusta el tamaño según tus necesidades */
-  height: 50px;
-  border-radius: 50%; /* Esto hace que el botón sea redondo */
-  background-color: #007bff; /* Color de fondo del botón */
+  width: 150px; /* Ajusta el tamaño según tus necesidades */
+  height: 150px;
+  background-color: transparent; /* Fondo transparente */
   display: flex;
   align-items: center;
   justify-content: center;
-  border: none;
+  border: none; /* Sin bordes */
   cursor: pointer;
-  position: absolute; /* Posiciona el botón de manera absoluta */
-  top: 50px; /* Ajusta la distancia desde la parte superior */
-  right: 50px; /* Ajusta la distancia desde la parte derecha */
+  position: fixed; /* Posiciona el botón de manera fija en la ventana */
+  top: 20px; /* Ajusta la distancia desde la parte superior de la ventana */
+  right: 20px; /* Ajusta la distancia desde la parte derecha de la ventana */
+  z-index: 1000; /* Asegura que el botón esté por encima de otros elementos */
+  padding: 0; /* Sin padding */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade una sombra para dar un efecto flotante */
+  border-radius: 50%; /* Hace que el botón sea redondo */
 }
 
 .wompi-button img {
-  width: 80%; /* Ajusta el tamaño de la imagen dentro del botón */
+  width: 100%; /* Ajusta la imagen al 100% del tamaño del botón */
   height: auto;
-  border-radius: 50%;
+  border-radius: 50%; 
+  transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+.wompi-button:hover img {
+  background-color: yellow; /* Fondo amarillo al pasar el cursor */
+  border-radius: 50%; /* Hace que el fondo amarillo sea redondo */
 }
