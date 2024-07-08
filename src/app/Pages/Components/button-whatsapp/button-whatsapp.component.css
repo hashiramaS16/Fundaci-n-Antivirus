@@ -1,0 +1,29 @@
+body {
+    font-family: 'RenogareSoft', sans-serif;
+    background-color: #e6f3ff;
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.whatsapp-button a {
+    display: flex;
+    align-items: center;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
