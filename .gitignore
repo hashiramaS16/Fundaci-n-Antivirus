@@ -8,13 +8,8 @@
 /scripts
 
 # Node
-/node_modules
-npm-debug.log
-yarn-error.log
+/node_modulesh
 
-# IDEs and editors
-.idea/
-.project
 .classpath
 .c9/
 *.launch
@@ -41,3 +36,4 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+node_modules
