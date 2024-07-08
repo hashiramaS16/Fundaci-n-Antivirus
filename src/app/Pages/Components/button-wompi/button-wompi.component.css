@@ -9,7 +9,7 @@
   border: none; /* Sin bordes */
   cursor: pointer;
   position: fixed; /* Posiciona el botón de manera fija en la ventana */
-  top: 20px; /* Ajusta la distancia desde la parte superior de la ventana */
+  top: 200px; /* Ajusta la distancia desde la parte superior de la ventana */
   right: 20px; /* Ajusta la distancia desde la parte derecha de la ventana */
   z-index: 1000; /* Asegura que el botón esté por encima de otros elementos */
   padding: 0; /* Sin padding */
