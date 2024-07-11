@@ -9,7 +9,7 @@
 
 .footer {
     width: 100%;
-    background-color: #32526E;
+    background-color: #708BC6;
     padding: 20px 0;
     /*background: radial-gradient(#DCEBF9, #32526E);*/
 }
@@ -78,6 +78,8 @@
 }
 
 .box-links .social-link {
+    display: flex;
+    justify-content: center;
     text-align: center;
 }
 
@@ -97,10 +99,14 @@
 }
 
 .box-links .social-link a:hover {
-    background-color: #FFBA08;   
-    margin-left: 15px;
-    margin-right: 15px;
+   background-color: #FFBA08;  
+    margin-inline: 15px;
 }
+
+img {
+    width: 30px;
+}
+
 
 .box-info .info {
     width: 33%;
@@ -146,7 +152,7 @@
 .box-terminos .terminos h5 a {
     font-size: 14px;
     padding: 10px;
-    color: #7D88BC;
+    color: #06407A;
 }
 
 @media(max-width:800px) {
