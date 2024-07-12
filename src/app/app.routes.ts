@@ -93,6 +93,11 @@ export const routes: Routes = [
                 loadComponent: () => import("./Pages/Oportunidades/Pages/Noticias/noticias.component").then((m) => m.NoticiasComponent),
             },
         ]
+    },
+    {
+        path:"",
+        redirectTo:"inicio",
+        pathMatch:"full"
     }
 ];
     

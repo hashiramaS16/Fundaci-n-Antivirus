@@ -1,0 +1,75 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contenedor{
+    background-color: #DCEBF9;
+    background: url("./../../../../../../../../public/assets/background.png");
+    background-size: 100vw;
+    background-repeat: no-repeat;
+}
+
+.hero{
+    display: grid;
+    grid-template-areas: "encabezado" "encabezado";
+    grid-template-areas: "card" "card";
+    grid-template-areas: "frase" "frase";
+}
+
+.encabezado{
+    grid-area: "encabezado";
+    display: flex; 
+    justify-content: center;
+    padding: 1em;
+    margin: 5px;
+}
+
+.centro{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.area{
+    display: grid;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(250, 163, 7, 0.9);
+    background-blend-mode: screen;
+    border-radius: 10px;   
+    margin: 1em;
+    padding: 1em;
+    opacity: 0.8;
+}
+
+.grupo{
+    color: #4D3281;
+} 
+
+.descripción{
+    color: #4D3281;
+}
+
+/*.lista{
+     background-color: rgba(250, 163, 7, 0.5); 
+}*/
+
+.item{
+    color: #4D3281;
+}
+
+.frase{
+    grid-area: "frase";
+    /* color: #FAA307; */
+    color: #4D3281;
+    display: flex; 
+    justify-content: center;
+    padding: 1em;
+    margin: 1em;
+    /* margin: 5px; */
+    background-color: rgba(250, 163, 7, 0.8);
+    border-radius: 10px;   
+}
