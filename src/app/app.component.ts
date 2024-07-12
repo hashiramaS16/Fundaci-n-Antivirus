@@ -9,8 +9,7 @@ import { FooterComponent } from './Pages/Components/footer/footer.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,NavBarComponent, ButtonWhatsappComponent],
-   imports: [RouterOutlet, NavBarComponent,ButtonWompiComponent,FooterComponent],
+  imports: [RouterOutlet, NavBarComponent, ButtonWompiComponent, FooterComponent, ButtonWhatsappComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'] // Corrected from styleUrl to styleUrls
 })
