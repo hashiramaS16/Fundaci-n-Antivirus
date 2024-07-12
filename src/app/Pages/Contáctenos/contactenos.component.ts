@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HeroComponent } from './Components/hero/hero.component';
+import { HeroComponent } from '../Oportunidades/Pages/Contáctenos/Components/hero/hero.component';
 
 @Component({
   selector: 'app-contactenos',
