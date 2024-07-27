@@ -1,0 +1,32 @@
+.container-video{
+    max-width: 50%;
+    box-shadow: inset 2px 2px 15px #FFBA08;
+    font-size: 1rem;
+    text-shadow: 2px 2px 10px #FFBA08;
+    font-family: 'Renogare Regular', 'Lucida Fax', sans-serif;
+    border-radius: 5px;
+} 
+
+h6{
+   text-decoration: underline;
+}
+
+.titulo-video{
+   font-family: Impact, sans-serif;
+   font-size: 1.8rem;
+   letter-spacing: 1px;
+   margin: 3rem auto;
+   text-align: center;
+}
+
+.parrafo-video{
+   text-indent: 2rem;
+   text-align: justify;
+   margin-bottom: 2rem;
+   font-size: 1rem;
+   word-wrap: break-word;
+}
+
+#video{
+   border-radius: 5px;
+  }
