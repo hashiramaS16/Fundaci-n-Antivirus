@@ -1,10 +1,10 @@
 .container-video{
     max-width: 50%;
-    box-shadow: inset 2px 2px 15px #FFBA08;
-    font-size: 1rem;
+    box-shadow: inset 2px 2px 5px #FFBA08;
+    font-size: 0.8rem;
     text-shadow: 2px 2px 10px #FFBA08;
     font-family: 'Renogare Regular', 'Lucida Fax', sans-serif;
-    border-radius: 5px;
+    border-radius: 15px;  
 } 
 
 h6{
@@ -13,20 +13,37 @@ h6{
 
 .titulo-video{
    font-family: Impact, sans-serif;
-   font-size: 1.8rem;
-   letter-spacing: 1px;
+   font-size: 3rem;
    margin: 3rem auto;
    text-align: center;
+   text-size-adjust: auto;
+  
 }
 
 .parrafo-video{
    text-indent: 2rem;
    text-align: justify;
    margin-bottom: 2rem;
-   font-size: 1rem;
+   font-size: 0.8rem;
    word-wrap: break-word;
+   text-shadow: 2px 2px 15px #FFBA08;
 }
 
 #video{
    border-radius: 5px;
-  }
+}
+
+@media screen and (max-width: 767px) {
+   .container-video{
+      max-width: 100%;
+   }
+   .pantalla-dividida {
+       flex-direction: column;
+       margin: auto;
+     
+   }
+   .derecha{
+       position: relative;
+       max-width: 100%;
+   }  
+}
