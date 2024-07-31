@@ -1,0 +1,71 @@
+.sobre-nosotros {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.sobre-nosotros h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.sobre-nosotros-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.sobre-nosotros-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 200px;
+    transition: transform 0.2s;
+    text-align: center;
+}
+
+.sobre-nosotros-card:hover {
+    transform: translateY(-10px);
+}
+
+.sobre-nosotros-card img {
+    width: 100%;
+    height: auto;
+}
+
+.sobre-nosotros-card button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #FAA307;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.s;
+}
+
+.sobre-nosotros-card button:hover {
+    background: #458B9A;
+}
+
+@media (max-width: 768px) {
+    .sobre-nosotros-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobre-nosotros-card {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sobre-nosotros-card button {
+        font-size: 14px;
+    }
+}
