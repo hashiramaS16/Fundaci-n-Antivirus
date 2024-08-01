@@ -36,5 +36,6 @@ export const routes: Routes = [
         title: "Servicios",
         loadComponent: () => import("./Pages/Servicios/servicios.component").then((m) => m.ServiciosComponent)
     }
+    
 ];
     
