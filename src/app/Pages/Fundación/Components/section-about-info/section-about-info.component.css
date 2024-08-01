@@ -15,6 +15,7 @@
     justify-content: center;
     gap: 20px;
     padding: 20px;
+    width: 100%;
 }
 
 .sobre-nosotros-card {
@@ -23,7 +24,8 @@
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: 200px;
+    width: 100%;
+    max-width: 300px; /* Ajusta esto según el tamaño deseado */
     transition: transform 0.2s;
     text-align: center;
 }
@@ -45,14 +47,14 @@
     color: #fff;
     font-size: 16px;
     cursor: pointer;
-    transition: background 0.s;
+    transition: background 0.2s;
 }
 
 .sobre-nosotros-card button:hover {
     background: #458B9A;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .sobre-nosotros-container {
         flex-direction: column;
         align-items: center;
@@ -64,7 +66,7 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     .sobre-nosotros-card button {
         font-size: 14px;
     }
