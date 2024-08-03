@@ -45,26 +45,7 @@ export const routes: Routes = [
                 title: "Estudiantes",
                 loadComponent: () => import("./Pages/Servicios/Pages/Estudiantes/estudiantes.component").then((m) => m.EstudiantesComponent),
                 children: [
-                    {
-                        path: "tutorias-mentorias",
-                        title: "Tutorias-Mentorias",
-                        loadComponent: () => import("./Pages/Servicios/Pages/Estudiantes/pages/tutoriasmentorias/tutoriasmentorias.component").then((m) => m.TutoriasmentoriasComponent),
-                    },
-                    {
-                        path: "nivelate",
-                        title: "nivelate",
-                        loadComponent: () => import("./Pages/Servicios/Pages/Estudiantes/pages/nivelate/nivelate.component").then((m) => m.NivelateComponent),
-                    },
-                    {
-                        path: "grupo-de-estudio",
-                        title: "Grupos-de-Estudio",
-                        loadComponent: () => import("./Pages/Servicios/Pages/Estudiantes/pages/grupos-de-estudios/grupos-de-estudios.component").then((m) => m.GruposDeEstudiosComponent),
-                    },
-                    {
-                        path: "acompañamiento-orientacion",
-                        title: "Acompañamiento-orientacion",
-                        loadComponent: () => import("./Pages/Servicios/Pages/Estudiantes/pages/acompanamientos-orientacion/acompanamientos-orientacion.component").then((m) => m.AcompanamientosOrientacionComponent),
-                    },
+
                 ]
             },
 
