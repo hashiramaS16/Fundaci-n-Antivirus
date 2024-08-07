@@ -1,7 +1,4 @@
-
-
-    
-   *{    
+ *{    
     margin: 0;    
     box-sizing: border-box;    
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
@@ -63,8 +60,6 @@ body{
     width: 400px;
     height: 242px;
 }
-
-
 .el-button-gradient--4:hover{    
     min-width: 130px;
     height: 40px;
