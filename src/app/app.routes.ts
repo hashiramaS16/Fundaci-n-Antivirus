@@ -76,6 +76,22 @@ export const routes: Routes = [
         ]
     },
     {
+        path:'login',
+        loadComponent:()=>import('./Modules/Auth/Login/login.component').then(m=>m.LoginComponent)
+    },
+    {   
+        path:'register',
+        loadComponent:()=>import('./Modules/Auth/Register/register.component').then(m=>m.RegisterComponent)
+    },
+    {
+      path: 'user',
+      loadComponent:()=>import('./Modules/user/user.component').then(m=>m.UserComponent)  
+    },
+    {
+      path: 'admin',
+      loadComponent:()=>import('./Modules/admin/admin.component').then(m=>m.AdminComponent)  
+    },
+    {
         path:"",
         redirectTo:"inicio",
         pathMatch:"full"
