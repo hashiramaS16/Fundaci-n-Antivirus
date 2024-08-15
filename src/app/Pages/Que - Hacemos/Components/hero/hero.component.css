@@ -1,12 +1,9 @@
-body {
+.contenedor {
+    width: 100%;
     font-family: 'RenogareSoft', sans-serif;
     background-color: #e6f3ff;
     margin: 0;
     padding: 0;
-    margin-top: 30vh;
-  }
-  
-  .gallery {
     display: flex;
     justify-content: center;
     align-items: center;

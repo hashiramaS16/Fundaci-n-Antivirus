@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.formulario-beneficios{
+    margin: 40px auto;
+}
+
+.contenido-beneficios{
+    width: 80%;
+    height: auto;
+    background: #222d56;
+    border-radius: 10px;
+    color: #fefefe;
+    font-size: 1rem;
+    text-shadow: 2px 2px 5px #ffba08;
+}
+
+.titulo-beneficios h2{
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 15px #ffba08;
+    text-align: center;
+    font-style: italic;
+    border-bottom: 2px solid #FFBA08;
+    margin-top: 40px;
+}
+
+.contenido-beneficios label{
+    display: block;
+}
+
+.contenido-beneficios input{
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+}
+.card{
+    margin: 10px auto;
+    border: none;
+    box-shadow: inset 1px 1px 10px 1px #FFBA08;
+}
+
+.card-text{
+    font-size: 1.5em;
+    border-bottom: 2px solid #FFBA08;
+    text-align: center;
+    margin: 10px auto;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px #FFBA08;
+}
+
+.btn-registrarse{
+    width: 60%;
+    margin-top: 20px;
+    padding: 10px;
+    background: #222d56;
+    color:#dcebf9;
+    letter-spacing: 1px;
+    box-shadow: 2px 2px 15px #FFBA08;
+    font-size: 1rem;
+    text-shadow: 2px 2px 5px #FFBA08;
+    border-radius: 15px;
+}
+ 
+.btn-registrarse:hover{
+    color: #FFBA08;
+    border: 5px double #dcebf9;
+    transform: scale(1.15);
+    transition: all 0.3ms ease;
+    cursor: pointer;
+}
+
+.beneficios-texto{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: justify;
+}
+
+.textos{
+    border: 1px solid black;
+    width: 60%;
+    text-indent: 10px;
+    box-shadow: inset 1px 1px 10px 1px #FFBA08;
+    border: none;
+    border-radius: 15px;
+}
+
+h2, h3{
+    color: #222d56;
+    text-shadow: 2px 2px 5px #FFBA08;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 2px solid #FFBA08
+}
+
+.beneficio1, .beneficio3{
+    align-self: flex-start;
+}
+   
+.beneficio2, .beneficio4{
+    align-self: flex-end;
+}
+
+@media (max-width: 576px){
+    .contenido-beneficios{
+        width: 100%;
+        padding: 5px;
+    }
+    .card-javi{
+        display: none;
+    }
+    .btn-registrarse{
+        width: 100%;
+        font-size: 0.5rem;
+    }
+    .textos{
+        width: 90%;
+        align-self: center;
+    }
+}
+    
