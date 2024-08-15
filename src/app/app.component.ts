@@ -6,6 +6,7 @@ import { ButtonWhatsappComponent } from './Pages/Components/button-whatsapp/butt
 import { FooterComponent } from './Pages/Components/footer/footer.component';
 
 
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -16,3 +17,6 @@ import { FooterComponent } from './Pages/Components/footer/footer.component';
 export class AppComponent {
   title = 'FundacionAntivirus';
 }
+
+
+
