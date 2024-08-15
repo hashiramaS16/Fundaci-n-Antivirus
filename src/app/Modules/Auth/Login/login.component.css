@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.inicio-sesion{
+    font-size: 1rem;
+    text-shadow: 2px 2px 4px #ffba08;
+    background: #708bc6;
+    color: #fefefe;
+    border-radius: 15px;
+}
+
+h3{
+    padding: 20px;
+    font-style: italic;
+}
+
+.registrate a{
+    color: black;
+}
+
+.login{
+    background: url(img/Javi\ 4.jpg);
+    background-position: right center;
+    background-size: contain;
+    background-repeat:no-repeat;
+}
+
+.banco-oportunidades{
+    color:#ffba08;
+    text-shadow: 2px 2px 5px black;
+    text-align: center;
+    border-bottom: 2px solid #FFBA08;
+}
+
+.iniciar-redes{
+    font-size: 1rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px #ffba08;
+}
+
+@media (max-width:570px) {
+    .inicio-sesion{
+        width: 100%;
+    }
+}

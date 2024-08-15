@@ -25,6 +25,6 @@
 }
 
 .wompi-button:hover img {
-  background-color: yellow; /* Fondo amarillo al pasar el cursor */
+  background-color: #ffba08; /* Fondo amarillo al pasar el cursor */
   border-radius: 50%; /* Hace que el fondo amarillo sea redondo */
 }
