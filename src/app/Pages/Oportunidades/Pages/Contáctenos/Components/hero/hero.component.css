@@ -1,0 +1,7 @@
+.fondo{
+    background: url('../../../../../../../../public/assets/oporhero.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 60vh;
+}

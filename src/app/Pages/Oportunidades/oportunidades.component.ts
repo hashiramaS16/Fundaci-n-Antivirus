@@ -5,7 +5,7 @@ import { NoticiasComponent } from './Pages/Noticias/noticias.component';
 @Component({
   selector: 'app-oportunidades',
   standalone: true,
-  imports: [ContactenosComponent,NoticiasComponent],
+  imports: [ContactenosComponent],
   templateUrl: './oportunidades.component.html',
   styleUrl: './oportunidades.component.css'
 })
