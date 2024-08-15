@@ -1,0 +1,81 @@
+
+body {
+    font-family: 'RenogareSoft', sans-serif;
+    background-color: #e6f3ff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 150vh;
+    margin: 0;
+    padding-right: 20px;
+}
+
+.condiciones, input, textarea{
+    font-family: 'RenogareSoft', sans-serif;
+}
+
+.form-container {
+    background-color: #003D49;
+    padding: 50px;
+    border-radius: 5px;
+    width: 400px;
+    height: auto;
+    color: white;
+   
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #003D49;
+    color: white;
+    font-size: 14px;
+    border-bottom: 0.1px solid #ffffff
+}
+
+.form-container input::placeholder,
+.form-container textarea::placeholder {
+    color: #ffffff;
+}
+
+.form-container input[type="checkbox"] {
+    width: auto;
+    margin: 0 10px 0 0;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #00bfff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'RenogareSoft', sans-serif;
+}
+
+.form-container button:hover {
+    background-color: #0196c6;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 5px; 
+}
+
+.form-container .checkbox-container {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.form-container .checkbox-container label {
+    margin: 0;
+    font-size: 14px;
+}

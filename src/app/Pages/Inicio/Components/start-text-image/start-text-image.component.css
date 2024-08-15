@@ -1,0 +1,121 @@
+    /* lineas acá */
+    /* lineas acá */
+    *{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #7C76B5;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .contenedor{
+        background: url("./../../../../../../public/assets/fondo_tis.webp");
+        background-size: cover;
+        opacity: 1;
+        display: grid;
+        grid-template-areas:
+         "encabezado encabezado"
+        /* "card" "aside" */
+        "aside card"
+        "boton boton";
+        width: 100vw;
+        height: 100vh;
+        margin-bottom: 100px;
+        
+        /* background-color: #708BC6;
+        background-color: #7C76B5;
+        background-color: #4D3281; */
+    }
+    
+    .encabezado{
+        grid-area: encabezado;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .titulo{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        /* font-size: xx-large; */
+        font-size: 3rem;
+        font-weight: lighter;
+    }
+    
+    .titulo:hover{
+        color: #FAA307;
+    }
+    
+    .card{
+        grid-area: card;
+        display: flex;
+        flex-direction: column;
+        overflow-wrap: normal;
+        padding: 1rem;
+        background-color: rgba(255, 255, 255, 0);
+    }
+    
+    .letras{
+        background-color: #FAA307;
+        opacity: 0.6;
+        padding: 1rem;
+        border-radius: 1rem;
+        margin: 1rem;
+    }
+    
+    .texto{
+        font-size: x-large;
+        color: #0c041c;
+    }
+    
+    .aside{
+        grid-area: aside;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .imagen{
+        padding: 1rem;
+    }
+    
+    .foto{
+        max-width: 50vw;
+        min-width: 400px;
+        border-radius: 1rem;
+        box-shadow: 0.15rem 0.15rem 0.5rem #FAA307;
+    }
+    
+    .boton{
+        grid-area: boton;    
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .zona_cliqueable{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        background-color: #7C76B5;
+        /* opacity: 0.4; */
+        border-radius: 1rem;
+        padding: 0.5rem;
+    }
+    
+    .zona_cliqueable:hover{
+        box-shadow: 0.15rem 0.15rem 0.5rem #FAA307;
+    }
+    
+    .clic{
+        color: #DCEBF9;
+        font-size: xx-large;
+        text-decoration: none;
+        padding-top: 0.25rem;
+        padding-bottom: 0.5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    
+    .clic:hover{
+        color: #FAA307;
+        text-shadow: 1px 1px 2px black;
+    }
