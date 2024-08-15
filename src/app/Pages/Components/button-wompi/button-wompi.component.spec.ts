@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { ButtonWompiComponent } from './button-wompi.component';
 
 describe('ButtonWompiComponent', () => {
@@ -8,10 +7,12 @@ describe('ButtonWompiComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ButtonWompiComponent]
+      declarations: [ ButtonWompiComponent ]
     })
     .compileComponents();
+  });
 
+  beforeEach(() => {
     fixture = TestBed.createComponent(ButtonWompiComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

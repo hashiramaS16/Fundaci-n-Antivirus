@@ -1,0 +1,123 @@
+.sobre-nosotros {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sobre-nosotros-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px; 
+}
+
+.sobre-nosotros-card {
+    display: inline-flex; 
+    align-items: center; 
+}
+
+
+.btn {
+    display: flexbox;  
+    align-items: center ; 
+    justify-content: center; 
+    padding: 10px 15px; 
+    margin: 0; 
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    background-color: #FAA307; 
+    color: #fff; 
+    border: 1px solid transparent;
+    border-radius: 4px;
+    user-select: none;
+    min-width: 100px; 
+    font-family: 'RenogareSoft', sans-serif;
+}
+
+
+.btn-default {
+    color: #fff;
+    background-color: #FAA307; /* Color de fondo */
+    border-color: #FAA307; /* Color del borde */
+    font-family: 'RenogareSoft', sans-serif;
+}
+
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active {
+    background-color: #e68a00; 
+    border-color: #e68a00; 
+}
+
+
+.dropdown-toggle {
+    position: relative;
+    display: flex; 
+    align-items: center; 
+    vertical-align: middle;
+}
+
+.dropdown-toggle:after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 5px;
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+
+.dropdown-menu {
+    font-family: 'RenogareSoft', sans-serif;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    list-style: none;
+    font-size: 14px;
+    background-color:#D9E9F1 ;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+
+
+.dropdown-menu > li > a {
+    display: block;
+    padding: 5px 15px; 
+    color: #333;
+    text-decoration: none;
+    font-family: 'RenogareSoft', sans-serif;
+    font-weight: 400;
+    line-height: 1.42857143;
+}
+
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    color: #d1cfcf;
+    background-color: #005F72;
+}
+
+
+.dropdown-menu .title {
+    display: block;
+    font-family: 'RenogareSoft', sans-serif;
+    font-size: 12px; 
+    color: #666; 
+}
+
+
+.btn-group:hover .dropdown-menu {
+    display: block;
+}
