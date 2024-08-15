@@ -1,10 +1,10 @@
- *{    
+*{    
     margin: 0;    
     box-sizing: border-box;    
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
     color: azure;
 }
-body{
+.contenedor-principal{
     height: 100vh;
     display:flex;
     flex-direction: column;
@@ -60,7 +60,9 @@ body{
     width: 400px;
     height: 242px;
 }
-.el-button-gradient--4:hover{    
+
+
+.el-button{    
     min-width: 130px;
     height: 40px;
     color:#fff;
@@ -89,4 +91,3 @@ body{
 
 
 
- 
