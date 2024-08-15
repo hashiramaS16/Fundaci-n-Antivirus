@@ -4,10 +4,6 @@
     background-color: #e6f3ff;
     margin: 0;
     padding: 0;
-  }
-  
-  .gallery {
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
